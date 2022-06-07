@@ -4,7 +4,7 @@
 #       write.
 
 class Story
-  def initialize(beginning, middle, conclusion)
+  def initialize(beginning ="Fee fi fo", middle = "fum", conclusion = "This is the house that jack")
     @beginning = beginning
     @middle = middle
     @conclusion = conclusion
