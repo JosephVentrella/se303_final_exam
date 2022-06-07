@@ -3,6 +3,15 @@
 #       refactoring.
 # Hint: Let the existing code use the new code.
 
+class Plant
+  def initialize(name, height)
+    @name = name
+    @height = height
+  end
+  def details
+    [name, height]
+  end
+end
 class Farm
 
   attr_reader :plots
