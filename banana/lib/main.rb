@@ -3,6 +3,14 @@
 # Hint: Let the existing functions use the new code that you
 #       write.
 
+class Story
+  def initialize(beginning, middle, conclusion)
+    @beginning = beginning
+    @middle = middle
+    @conclusion = conclusion
+  end
+end
+
 def word_count(beginning, middle, conclusion)
   beginning.split.size +
   middle.split.size +
