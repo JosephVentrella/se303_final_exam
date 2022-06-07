@@ -4,13 +4,16 @@
 def first
   "Mr. Dursley was the director of a firm called Grunnings, which made drills."
 end
-def story
+
+def middle
   middle = ""
   middle << "\n"
   middle << "\n"
   middle << "\n"
   middle << "\n"
   middle << "\n"
+end
+def story
   conclusion = "And that was it."
   first + middle + conclusion
 end
