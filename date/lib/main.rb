@@ -14,6 +14,17 @@ class Plant
     [name, height]
   end
 end
+
+class Plot
+  def initialize(plot_items)
+    @plot_items = plot_items
+  end
+  def size
+    plot_items.size
+  end
+
+end
+
 class Farm
 
   attr_reader :plots
@@ -28,6 +39,7 @@ class Farm
     beet_1 = Plant.new("Rainbow", 1).details
     beet_2 = Plant.new("Deep Darkness", 1).details
     # Plots have a name and some plants
+    #plot_a = Plot.new(["Plot A", corn, radish_1, radish_2])
     plot_a = ["Plot A", corn, radish_1, radish_2]
     plot_b = ["Plot B", cucumber, tomato, beet_1, beet_2]
     @plots = [plot_a, plot_b]
